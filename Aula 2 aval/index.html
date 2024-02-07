@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Alteração de Caractere</title>
+</head>
+<body>
+    <p id="texto">Exemplo de texto com um caractere a ser alterado.</p>
+
+    <button onclick="alterarCaractere()">Alterar Caractere</button>
+
+    <script>
+        function alterarCaractere() {
+            var textoElemento = document.getElementById("texto");
+            var texto = textoElemento.innerText;
+            var novoTexto = texto.replace('a', 'X'); // Substitui todas as ocorrências de 'a' por 'X'
+            textoElemento.innerText = novoTexto;
+        }
+    </script>
+</body>
+</html>
